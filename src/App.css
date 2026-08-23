@@ -89,6 +89,61 @@ img {
   flex-direction: column;
 }
 
+/* ================= WHATSAPP FLOATING BUTTON ================= */
+
+.whatsappButton {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #25D366;
+  color: white;
+
+  border-radius: 50%;
+
+  z-index: 9999;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+.whatsappButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.whatsappIcon {
+  width: 34px;
+  height: 34px;
+
+  fill: white;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .whatsappButton {
+    width: 52px;
+    height: 52px;
+
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .whatsappIcon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .logoText strong {
   font-size: 18px;
   letter-spacing: 2px;
